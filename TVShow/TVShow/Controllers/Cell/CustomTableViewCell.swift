@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var labelCell: UILabel!
     
+    var data:Movie?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,4 +26,9 @@ class CustomTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(movie: Movie?) {
+        self.data = movie
+        labelCell.text = self.data?.name
+        imageCell.sd_setImage(with: URL(string: self.data?.images.medium ?? ""), placeholderImage: UIImage(named: ""))
+    }
 }

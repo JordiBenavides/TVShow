@@ -8,5 +8,6 @@ target 'TVShow' do
   # Pods for TVShow
   pod 'Moya'
   pod 'Kingfisher'
+  pod 'SDWebImage', '~> 4.0'
 
 end

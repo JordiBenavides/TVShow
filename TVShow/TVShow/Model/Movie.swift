@@ -15,10 +15,19 @@ struct Movie: Codable {
     let name: String
     let type: String
     let images: Image
+    
+    private enum CodingKeys : String, CodingKey {
+        case id
+        case url
+        case name
+        case type
+        case images = "image"
+        
+     }
 }
 
 struct Image: Codable {
-    
+
     let medium: String
     let original: String
 }

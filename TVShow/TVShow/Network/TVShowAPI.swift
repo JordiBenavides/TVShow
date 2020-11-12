@@ -10,15 +10,15 @@ import Foundation
 import Moya
 
 enum TVShowAPI {
-    case tvShow
+    case getMovies
 }
 
 extension TVShowAPI:TargetType,AccessTokenAuthorizable {
-    public var baseURL: URL {  return URL(string: "http://api.tvmaze.com/")!}
+    public var baseURL: URL {  return URL(string: "https://api.tvmaze.com/")!}
     
     public var path: String {
         switch self {
-        case .tvShow:
+        case .getMovies:
             return "shows"
         }
         
@@ -26,21 +26,22 @@ extension TVShowAPI:TargetType,AccessTokenAuthorizable {
     
     var method: Moya.Method {
         switch self {
-        case .tvShow:
+        case .getMovies:
             return .get
+            
         }
     }
     
     var authorizationType: AuthorizationType {
         switch self {
-        case .tvShow:
+        case .getMovies:
             return .bearer
         }
     }
     
     public var task: Task {
         switch self {
-        case .tvShow:
+        case .getMovies:
             return .requestPlain
         }
     }

@@ -8,11 +8,17 @@
 
 import Foundation
 
-struct ResponseAPI: Codable {
+struct Movie: Codable {
     
     let id: Int
     let url: String
     let name: String
     let type: String
-    let language: String
+    let images: Image
+}
+
+struct Image: Codable {
+    
+    let medium: String
+    let original: String
 }

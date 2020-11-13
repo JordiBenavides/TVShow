@@ -63,7 +63,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
             guard let vc = storyboard.instantiateViewController(withIdentifier: "OneMovieViewController") as? OneMovieViewController else { return }
-        vc.data = data
+        vc.data = data?[indexPath.row]
             navigationController?.pushViewController(vc,
                                                animated: true)
         

@@ -10,7 +10,7 @@ import UIKit
 
 class OneMovieViewController: UIViewController {
 
-    var data: [Movie]?
+    var data: Movie?
     
     override func viewDidLoad() {
         super.viewDidLoad()

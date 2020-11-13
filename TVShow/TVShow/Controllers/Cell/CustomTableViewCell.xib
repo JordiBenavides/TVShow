@@ -16,24 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GRa-ni-o5I">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2i-MF-yxo">
-                        <rect key="frame" x="308" y="0.0" width="42" height="60"/>
+                        <rect key="frame" x="15" y="0.0" width="42" height="60"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GRa-ni-o5I">
+                        <rect key="frame" x="163" y="0.0" width="172" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="aKM-tV-cXu"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="GRa-ni-o5I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ph3-ar-U4W"/>
-                    <constraint firstItem="GRa-ni-o5I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bKg-Cu-4gH"/>
-                    <constraint firstItem="l2i-MF-yxo" firstAttribute="leading" secondItem="GRa-ni-o5I" secondAttribute="trailing" constant="20" id="j2G-pD-o9u"/>
-                    <constraint firstAttribute="trailing" secondItem="l2i-MF-yxo" secondAttribute="trailing" id="sAS-dr-5aS"/>
-                    <constraint firstAttribute="bottom" secondItem="GRa-ni-o5I" secondAttribute="bottom" id="t0l-nm-5fU"/>
-                    <constraint firstAttribute="bottom" secondItem="l2i-MF-yxo" secondAttribute="bottom" id="u8t-pQ-mba"/>
-                    <constraint firstItem="l2i-MF-yxo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zK9-Md-kbV"/>
+                    <constraint firstAttribute="bottom" secondItem="l2i-MF-yxo" secondAttribute="bottom" id="3NI-au-JIu"/>
+                    <constraint firstAttribute="bottom" secondItem="GRa-ni-o5I" secondAttribute="bottom" id="5YX-tm-x7K"/>
+                    <constraint firstItem="GRa-ni-o5I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NMM-vu-Luk"/>
+                    <constraint firstItem="l2i-MF-yxo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OvM-S4-aSy"/>
+                    <constraint firstAttribute="trailing" secondItem="GRa-ni-o5I" secondAttribute="trailing" constant="15" id="ubb-vY-lyS"/>
+                    <constraint firstItem="l2i-MF-yxo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xjG-f4-wYk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -41,7 +43,7 @@
                 <outlet property="imageCell" destination="GRa-ni-o5I" id="vVu-ai-vgb"/>
                 <outlet property="labelCell" destination="l2i-MF-yxo" id="4SF-Lt-de3"/>
             </connections>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </tableViewCell>
     </objects>
 </document>

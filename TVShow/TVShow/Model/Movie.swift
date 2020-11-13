@@ -14,6 +14,7 @@ struct Movie: Codable {
     let url: String
     let name: String
     let type: String
+    let summary: String
     let images: Image
     
     private enum CodingKeys : String, CodingKey {
@@ -21,6 +22,7 @@ struct Movie: Codable {
         case url
         case name
         case type
+        case summary
         case images = "image"
         
      }

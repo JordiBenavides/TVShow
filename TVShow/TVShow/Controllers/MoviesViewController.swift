@@ -59,8 +59,19 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "OneMovieViewController") as? OneMovieViewController else { return }
+        vc.data = data
+            navigationController?.pushViewController(vc,
+                                               animated: true)
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+
 }
 

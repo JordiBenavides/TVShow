@@ -20,11 +20,18 @@ class OneMovieViewController: UIViewController {
         super.viewDidLoad()
 
         labelName.text = data?.name
-        labelDescription.text = data?.summary
+
+        let myAttribute = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25)]
+        let myAttrString = NSAttributedString(string: data?.summary.htmlToString ?? "", attributes: myAttribute)
+        
+        
+        labelDescription.attributedText = myAttrString
         imageMovie.sd_setImage(with: URL(string: data?.images.medium ?? ""), placeholderImage: UIImage(named: ""))
+        
      
     }
     
     
 
 }
+

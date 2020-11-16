@@ -18,6 +18,7 @@
 		9D2C38DD255C5F4200C1DBE6 /* TVShowAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C38DC255C5F4200C1DBE6 /* TVShowAPI.swift */; };
 		9D2C38DF255C5F6200C1DBE6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C38DE255C5F6200C1DBE6 /* Movie.swift */; };
 		9D2C38E5255E87DE00C1DBE6 /* OneMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C38E4255E87DE00C1DBE6 /* OneMovieViewController.swift */; };
+		9DA7BB6825630A3A00BC81E2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB6725630A3A00BC81E2 /* String+Extension.swift */; };
 		9FB81429E7580E5BB6774965 /* Pods_TVShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32022A90865F2D8C65C15400 /* Pods_TVShow.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		9D2C38DC255C5F4200C1DBE6 /* TVShowAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowAPI.swift; sourceTree = "<group>"; };
 		9D2C38DE255C5F6200C1DBE6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		9D2C38E4255E87DE00C1DBE6 /* OneMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMovieViewController.swift; sourceTree = "<group>"; };
+		9DA7BB6725630A3A00BC81E2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D9C924C19AD5B96A1C76D206 /* Pods-TVShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShow.release.xcconfig"; path = "Target Support Files/Pods-TVShow/Pods-TVShow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 		9D2C38BC255C0E9800C1DBE6 /* TVShow */ = {
 			isa = PBXGroup;
 			children = (
+				9DA7BB6625630A2000BC81E2 /* Utils */,
 				9D2C38D3255C154400C1DBE6 /* Application */,
 				9D2C38D4255C157500C1DBE6 /* Model */,
 				9D2C38E0255C936300C1DBE6 /* Network */,
@@ -93,9 +96,9 @@
 		9D2C38D1255C146700C1DBE6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D2C38D5255C158200C1DBE6 /* Cell */,
 				9D2C38C1255C0E9800C1DBE6 /* MoviesViewController.swift */,
 				9D2C38E4255E87DE00C1DBE6 /* OneMovieViewController.swift */,
+				9D2C38D5255C158200C1DBE6 /* Cell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +146,14 @@
 				9D2C38DC255C5F4200C1DBE6 /* TVShowAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9DA7BB6625630A2000BC81E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BB6725630A3A00BC81E2 /* String+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DD0306812C076AF751313087 /* Pods */ = {
@@ -270,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA7BB6825630A3A00BC81E2 /* String+Extension.swift in Sources */,
 				9D2C38C2255C0E9800C1DBE6 /* MoviesViewController.swift in Sources */,
 				9D2C38BE255C0E9800C1DBE6 /* AppDelegate.swift in Sources */,
 				9D2C38D8255C549E00C1DBE6 /* CustomTableViewCell.swift in Sources */,

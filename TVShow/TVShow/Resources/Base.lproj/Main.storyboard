@@ -65,7 +65,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKk-dJ-VBh">
-                                                <rect key="frame" x="0.0" y="557" width="388" height="24"/>
+                                                <rect key="frame" x="35" y="557" width="328" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="hKk-dJ-VBh" firstAttribute="leading" secondItem="0nD-ZU-NAl" secondAttribute="leading" id="AUp-Mr-lCW"/>
+                                            <constraint firstItem="hKk-dJ-VBh" firstAttribute="leading" secondItem="0nD-ZU-NAl" secondAttribute="leading" constant="35" id="AUp-Mr-lCW"/>
                                             <constraint firstItem="wGD-BR-gxd" firstAttribute="leading" secondItem="0nD-ZU-NAl" secondAttribute="leading" constant="9" id="Ded-za-7dY"/>
                                             <constraint firstItem="hKk-dJ-VBh" firstAttribute="top" secondItem="wGD-BR-gxd" secondAttribute="bottom" constant="20" id="G0n-By-qXA"/>
                                             <constraint firstItem="eje-9s-g0m" firstAttribute="top" secondItem="0nD-ZU-NAl" secondAttribute="top" constant="8" id="NJf-Mq-00l"/>
@@ -82,7 +82,7 @@
                                             <constraint firstAttribute="bottom" secondItem="hKk-dJ-VBh" secondAttribute="bottom" constant="20" id="tAc-dm-hXM"/>
                                             <constraint firstItem="wGD-BR-gxd" firstAttribute="centerX" secondItem="0nD-ZU-NAl" secondAttribute="centerX" id="xrC-Wt-tNJ"/>
                                             <constraint firstItem="wGD-BR-gxd" firstAttribute="top" secondItem="eje-9s-g0m" secondAttribute="bottom" constant="8" id="y2U-QD-O3Q"/>
-                                            <constraint firstAttribute="trailing" secondItem="hKk-dJ-VBh" secondAttribute="trailing" constant="10" id="y8L-n0-40g"/>
+                                            <constraint firstAttribute="trailing" secondItem="hKk-dJ-VBh" secondAttribute="trailing" constant="35" id="y8L-n0-40g"/>
                                         </constraints>
                                     </view>
                                 </subviews>
